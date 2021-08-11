@@ -70,10 +70,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 player.velocity = new Vector2(player.velocity.x, -speed);
             }
-            if (dashTime != originalDashTime)
-            {
-                dashTime = originalDashTime;
-            }
         }
         // The player is dashing and moving in a direction.
         else if ((moveHorizontal != 0 || moveVertical != 0) && isDashing)
@@ -112,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
                 // Sets the dash cooldown
                 nextDashTime = Time.time + dashCooldown;
                 // Sets for how long the dash is going to be. 
-                dashTime = Time.time + dashTime;
+                dashTime = Time.time + originalDashTime;
 
             }
             isDashing = false;
