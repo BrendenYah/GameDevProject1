@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public bool isDashing;
     public float dashCooldown;
+    public float dashTime = 0.5f;
+    public float originalDashTime;
     public float nextDashTime;
     public float speedMultiplier;
     public float maxSpeed;
@@ -36,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
         {
             isDashing = true;
             Debug.Log(isDashing);
-            nextDashTime = Time.time + dashCooldown;
         }
     }
 
@@ -50,8 +51,8 @@ public class PlayerMovement : MonoBehaviour
          * 
          */
 
-        // The player is not dashing
-        if (isDashing == false)
+        // The player is not dashing and the dash has completed. Resume normal movement.
+        if (!isDashing && Time.time > dashTime)
         {
             if (moveHorizontal > 0)
             {
@@ -69,9 +70,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 player.velocity = new Vector2(player.velocity.x, -speed);
             }
+            if (dashTime != originalDashTime)
+            {
+                dashTime = originalDashTime;
+            }
         }
         // The player is dashing and moving in a direction.
-        else if (moveHorizontal != 0 || moveVertical != 0)
+        else if ((moveHorizontal != 0 || moveVertical != 0) && isDashing)
         {
             // If the dash is not on cooldown, try to dash.
             if (nextDashTime < Time.time)
@@ -91,7 +96,8 @@ public class PlayerMovement : MonoBehaviour
                 {
                     player.velocity = new Vector2(player.velocity.x, maxSpeed);
                 }
-                // 
+
+                // If not at max speed after dash, multiply the player velocity. 
                 if (!maxSpeedx)
                 {
                     player.velocity = new Vector2(player.velocity.x * speedMultiplier,
@@ -102,9 +108,16 @@ public class PlayerMovement : MonoBehaviour
                     player.velocity = new Vector2(player.velocity.x,
                         player.velocity.y * speedMultiplier);
                 }
-                isDashing = false;
+
+                // Sets the dash cooldown
+                nextDashTime = Time.time + dashCooldown;
+                // Sets for how long the dash is going to be. 
+                dashTime = Time.time + dashTime;
+
             }
+            isDashing = false;
         }
+        // The player is not moving, therefore the dash cannot occur. 
         else
         {
             isDashing = false;
