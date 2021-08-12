@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
+        // Keeps the ball from rotating infinitely after crashing into another rigidbody. 
+        player.freezeRotation = true;
         nextDashTime = Time.time;
         anim = GetComponent<Animator>();
     }
@@ -43,10 +45,9 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("space") && (Time.time > nextDashTime))
         {
             isDashing = true;
-            Debug.Log(isDashing);
         }
 
-
+        // Animate the current player
         PlayerAnimation();
     }
 
