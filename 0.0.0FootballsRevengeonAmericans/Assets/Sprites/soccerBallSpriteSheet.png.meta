@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: ae4daffff16b09e40b508607b3a1d12d
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1265579658761706123
+    second: soccerBallSpriteSheet_0
+  - first:
+      213: 6363202908297812737
+    second: soccerBallSpriteSheet_1
+  - first:
+      213: -5506390211246231271
+    second: soccerBallSpriteSheet_2
+  - first:
+      213: -1324924320893148379
+    second: soccerBallSpriteSheet_3
+  - first:
+      213: -8757135275415738833
+    second: soccerBallSpriteSheet_4
+  - first:
+      213: 7875088508134128938
+    second: soccerBallSpriteSheet_5
+  - first:
+      213: -5587682533612946093
+    second: soccerBallSpriteSheet_6
+  - first:
+      213: 4286594747482261101
+    second: soccerBallSpriteSheet_7
+  - first:
+      213: 7662840179618447314
+    second: soccerBallSpriteSheet_8
+  - first:
+      213: 2424179796164388458
+    second: soccerBallSpriteSheet_9
+  - first:
+      213: 8448133341241153548
+    second: soccerBallSpriteSheet_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +74,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +108,252 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5756c847102cf6ee0800000000000000
+      internalID: -1265579658761706123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bd2d6d453ae4850800000000000000
+      internalID: 6363202908297812737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911faf7e64f5593b0800000000000000
+      internalID: -5506390211246231271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52363e2995cec9de0800000000000000
+      internalID: -1324924320893148379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f266dc24dd7687680800000000000000
+      internalID: -8757135275415738833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d781e264fe94d60800000000000000
+      internalID: 7875088508134128938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d785a27509472b0800000000000000
+      internalID: -5587682533612946093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d664cb3263b0d7b30800000000000000
+      internalID: 4286594747482261101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df7fbc3b80e75a60800000000000000
+      internalID: 7662840179618447314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66ae064eaa64a120800000000000000
+      internalID: 2424179796164388458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soccerBallSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 33.18182
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0810d3838ccd3570800000000000000
+      internalID: 8448133341241153548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
