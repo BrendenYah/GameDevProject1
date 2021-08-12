@@ -1024,6 +1024,7 @@ MonoBehaviour:
   maxSpeed: 32
   moveHorizontal: 0
   moveVertical: 0
+  rotationSpeed: 720
 --- !u!61 &1973095800
 BoxCollider2D:
   m_ObjectHideFlags: 0
